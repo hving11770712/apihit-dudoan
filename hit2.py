@@ -10,7 +10,7 @@ from flask_cors import CORS
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-API_URL = "https://hitclub-0yxn.onrender.com/api/hit"
+API_URL = "https://apihitmb5.onrender.com/api/hit"
 POLL_INTERVAL = 5
 MAX_HISTORY_LEN = 500
 
@@ -221,6 +221,7 @@ if __name__ == "__main__":
     threading.Thread(target=poll_api, daemon=True).start()
     port = int(os.getenv("PORT", 9000))
     app.run(host="0.0.0.0", port=port)
+
 
 
 
