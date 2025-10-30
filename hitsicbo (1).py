@@ -12,7 +12,7 @@ import math
 
 logging.basicConfig(level=logging.INFO, format="%(asctime)s - %(levelname)s - %(message)s")
 
-API_URL = "https://sicbohit-gf0f.onrender.com/api/sicbo789"
+API_URL = "https://apihitsicbo.onrender.com/api/sicbo789"
 
 POLL_INTERVAL = 5
 MAX_HISTORY_LEN = 500
@@ -542,5 +542,6 @@ if __name__ == "__main__":
     port = int(os.getenv("PORT", 8880))
 
     app.run(host="0.0.0.0", port=port)
+
 
 
